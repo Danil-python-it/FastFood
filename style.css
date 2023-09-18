@@ -179,37 +179,81 @@ header, main{
 .Atwo_container_photo:hover img {
     transform: scale(1.3);
 }
-
-
-
-
-
-.Athree_container_photo{
-    width: 250px;
-    height: 250px;
-    background-color: rgb(34, 34, 34);
+.Athree_container_Size{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-y: hidden;
+    background-image: url(image/services_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    height: 120vh;
+    width: 100%;
+    margin: 50px 0 ;
+    z-index: 1;
+}
+.Athree_container_Size::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 -50px 600px 600px black;
+    z-index: 2;
+}
+.Athree_container_BigData{
+    max-width:1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 800px;
+}
+.Athree_container_FirstPage{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 4;
+}
+.Athree_container_data{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(81, 81, 81);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    z-index: 5;
+    color: rgb(215, 215, 215);
+    font-size: 15px;
+    font-weight: 600px;
 }
-.Athree_container_FirstPage{
+.Logo_Data{
+    font-size: 25px;
+    color: white;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-around;
-}
-.Athree_container_Size{
-    display: none;
-    max-width: 2000px;
     width: 100%;
-    height: 100vh;
-    margin: 50px 0;
-    background-color: rgb(62, 61, 61);
-    
+    overflow-y: hidden;
 }
-
+.Logo_Data div:nth-child(1) {
+    font-size: 30px;
+    padding: 20px;
+    background-color: red;
+    border-radius: 50% ;
+    font-weight: 900;
+    margin: 10px;
+}
+.button_menu_item {
+    color: rgb(185, 186, 180);
+    font-size: 20px;
+}
 
 
 /* main end */
@@ -221,6 +265,9 @@ header, main{
 /* media */
 
 @media (max-width:1250px){
+    .Athree_container_Size{
+        display: none;
+    }
     body{
         min-width: 750px;
         text-align: center;
