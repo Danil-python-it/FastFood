@@ -238,16 +238,15 @@ header, main{
     .Atwo_container_Size{
         flex-direction: column;
         justify-content: space-between;
-
     }
     .Atwo_container_FirstPage{
         justify-content: space-evenly;
-        margin: 25px;
     }
 }
+
 @media (max-width:425px){
     body{
-        min-width: 320px;
+        min-width: 300px;
         text-align: center;
     }
     .NavigationMenu{
@@ -255,17 +254,26 @@ header, main{
     }
     .title_Aone{
         margin-bottom: 10px;
+        font-size: 40px;
     }
     .underTitle{
-        width: 350px;
+        font-size: 20px;
+        width: 300px;
         margin: 10px;
-    }
-    .container_image::before{
-        width: 400px;
-        height: 400px;
-    }
-    
+    }   
     .Atwo_container_FirstPage{
         flex-direction: column;
+        justify-content:flex-start;
+        margin:0;
+    }
+    .container_image::before, .container_image{
+        width: 300px;
+        height: 300px;
+    }
+    .container_image img{
+        width: 450px;
+    }
+    .Atwo_container_photo{
+        margin-bottom: 10px;
     }
 }
