@@ -237,11 +237,13 @@ header, main{
     }
     .Atwo_container_Size{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-around;
+        align-content: center;
+        margin: 40px;
+        height: 700px;
+        max-width: 700px;  
     }
-    .Atwo_container_FirstPage{
-        justify-content: space-evenly;
-    }
+
 }
 
 @media (max-width:425px){
@@ -261,6 +263,13 @@ header, main{
         width: 300px;
         margin: 10px;
     }   
+    .Atwo_container_Size{
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: max-content;
+        height: max-content;
+
+    }
     .Atwo_container_FirstPage{
         flex-direction: column;
         justify-content:flex-start;
