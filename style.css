@@ -199,7 +199,7 @@ header, main{
     position: absolute;
     width: 100%;
     background-color: black;
-    box-shadow: 0 -50px 600px 600px black;
+    box-shadow: 0 -50px 1000px 1000px black;
     z-index: 2;
 }
 .Athree_container_BigData{
@@ -279,7 +279,7 @@ header, main{
         margin-bottom: 30px;
     }
     .Athree_container_Size{
-        min-height: 150vh;
+        min-height: 1313px;
         background-size:auto;
     }
     .Athree_container_Size::after{
@@ -332,7 +332,7 @@ header, main{
         height: 100%;
     }
     .Athree_container_Size{
-        min-height:300vh ;
+        min-height:2625px ;
     }
     .button_menu_item {
         margin-left: 10px;
